@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  default to: 'contact@fandom.org.pl', from: 'contact@fandom.org.pl'
   layout 'mailer'
 end
