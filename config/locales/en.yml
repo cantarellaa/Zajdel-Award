@@ -32,3 +32,8 @@
 en:
   app_title: Janusz A. Zajdel Award
   app_description: Find works by Polish award winning authors
+
+  home:
+    home:
+      title: Janusz A. Zajdel Award
+      welcome: Welcome to the Zajdel Award English page!

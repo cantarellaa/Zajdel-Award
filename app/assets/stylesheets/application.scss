@@ -14,5 +14,19 @@
  *= require_self
  */
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$main-font: 'Times New Roman', 'Times', serif;
+$bg-color: #fff4d8;
+
+body {
+  font-family: $main-font;
+  background-color: $bg-color;
+  margin: 10px;
+  padding: 10px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
