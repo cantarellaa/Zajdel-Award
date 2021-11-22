@@ -59,6 +59,8 @@ gem 'haml-rails'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'modernizr-rails'
 
+gem 'jquery-rails'
+
 gem 'rails-controller-testing'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
