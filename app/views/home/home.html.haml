@@ -1,2 +1,14 @@
-%h1= t('.title')
-%p= t('.welcome')
+!!!
+%html{:lang => "en"}
+  %head
+    %title Home
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+  %body
+    = render "shared/header"
+
+    %h1= t('.title')
+    %p= t('.welcome')
+
+    = render "shared/footer"

@@ -1,0 +1,26 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title Header
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+  %body
+    %header.header
+      %nav.navbar.navbar-expand-lg.fixed-top.py-3
+        .container
+          %a.navbar-brand.text-uppercase.font-weight-bold{:href => "/"} ZAJDEL AWARD LOGO
+          %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+            %i.fa.fa-bars
+          #navbarSupportedContent.collapse.navbar-collapse
+            %ul.navbar-nav.ml-auto
+              %li.nav-item.active
+                %a.nav-link.text-uppercase.font-weight-bold{:href => "/"}
+                  Home
+                  %span.sr-only (current)
+              %li.nav-item
+                %a.nav-link.text-uppercase.font-weight-bold{:href => "/about"} About
+              %li.nav-item
+                %a.nav-link.text-uppercase.font-weight-bold{:href => "#"} Winners
+              %li.nav-item
+                %a.nav-link.text-uppercase.font-weight-bold{:href => "/contact"} Contact
