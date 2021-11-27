@@ -9,18 +9,22 @@
     %header.header
       %nav.navbar.navbar-expand-lg.fixed-top.py-3
         .container
-          %a.navbar-brand.text-uppercase.font-weight-bold{:href => "/"} ZAJDEL AWARD LOGO
-          %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
-            %i.fa.fa-bars
-          #navbarSupportedContent.collapse.navbar-collapse
-            %ul.navbar-nav.ml-auto
-              %li.nav-item.active
-                %a.nav-link.text-uppercase.font-weight-bold{:href => "/"}
-                  Home
-                  %span.sr-only (current)
-              %li.nav-item
-                %a.nav-link.text-uppercase.font-weight-bold{:href => "/about"} About
-              %li.nav-item
-                %a.nav-link.text-uppercase.font-weight-bold{:href => "#"} Winners
-              %li.nav-item
-                %a.nav-link.text-uppercase.font-weight-bold{:href => "/contact"} Contact
+          /
+            <button class="navbar-toggler navbar-toggler-right">{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+            <i class="fa fa-bars"></i></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          %hr/
+          %ul.navbar-nav.d-flex.justify-content-end
+            %li.nav-item.active
+            %li.nav-item
+              %a.nav-link{:href => "/about"} About
+            %li.nav-item
+              %a.nav-link{:href => "#"} Janusz A. Zajdel
+            %li.nav-item
+              %a.nav-link{:href => "#"} Laureates
+            %li.nav-item
+              %a.nav-link{:href => "#"} Voting
+            %li.nav-item
+              %a.nav-link{:href => "/contact"} Contact
+          %hr/
+          / </div>
