@@ -1,0 +1,30 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title Header
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+  %body
+    %header.header
+      %nav.navbar.navbar-expand-lg.fixed-top.py-3
+        .container
+          /
+            <button class="navbar-toggler navbar-toggler-right">{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+            <i class="fa fa-bars"></i></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          %hr/
+          %ul.navbar-nav.d-flex.justify-content-end
+            %li.nav-item.active
+            %li.nav-item
+              %a.nav-link{:href => "/about"} About
+            %li.nav-item
+              %a.nav-link{:href => "#"} Janusz A. Zajdel
+            %li.nav-item
+              %a.nav-link{:href => "#"} Laureates
+            %li.nav-item
+              %a.nav-link{:href => "#"} Voting
+            %li.nav-item
+              %a.nav-link{:href => "/contact"} Contact
+          %hr/
+          / </div>
