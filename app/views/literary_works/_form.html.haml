@@ -1,0 +1,22 @@
+= form_for @literary_work do |f|
+  - if @literary_work.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@literary_work.errors.count, "error")} prohibited this literary_work from being saved:"
+      %ul
+        - @literary_work.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :nominated_year
+    = f.number_field :nominated_year
+  .field
+    = f.label :category
+    = f.text_field :category
+  .field
+    = f.label :has_won
+    = f.check_box :has_won
+  .actions
+    = f.submit 'Save'

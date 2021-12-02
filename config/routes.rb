@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :literary_works
+  resources :authors
   root 'home#home'
 
   get 'contact', to: 'home#contact'

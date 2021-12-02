@@ -1,0 +1,27 @@
+%h1 Listing literary_works
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Nominated year
+      %th Category
+      %th Has won
+      %th
+      %th
+      %th
+
+  %tbody
+    - @literary_works.each do |literary_work|
+      %tr
+        %td= literary_work.title
+        %td= literary_work.nominated_year
+        %td= literary_work.category
+        %td= literary_work.has_won
+        %td= link_to 'Show', literary_work
+        %td= link_to 'Edit', edit_literary_work_path(literary_work)
+        %td= link_to 'Destroy', literary_work, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Literary work', new_literary_work_path

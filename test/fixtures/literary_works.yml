@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  nominated_year: 1
+  category: MyString
+  has_won: false
+
+two:
+  title: MyString
+  nominated_year: 1
+  category: MyString
+  has_won: false
