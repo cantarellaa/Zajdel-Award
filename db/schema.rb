@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_02_212552) do
+ActiveRecord::Schema.define(version: 2021_12_03_002522) do
 
   create_table "authors", force: :cascade do |t|
     t.string "first_name", null: false
@@ -26,6 +26,12 @@ ActiveRecord::Schema.define(version: 2021_12_02_212552) do
     t.integer "nominated_year", null: false
     t.string "category", null: false
     t.boolean "has_won", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "work_types", force: :cascade do |t|
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,0 +1,21 @@
+%h1 Listing work_types
+
+%table
+  %thead
+    %tr
+      %th Type
+      %th
+      %th
+      %th
+
+  %tbody
+    - @work_types.each do |work_type|
+      %tr
+        %td= work_type.type
+        %td= link_to 'Show', work_type
+        %td= link_to 'Edit', edit_work_type_path(work_type)
+        %td= link_to 'Destroy', work_type, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Work type', new_work_type_path

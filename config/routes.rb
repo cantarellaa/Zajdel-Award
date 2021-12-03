@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :work_types
   resources :literary_works
   resources :authors
   root 'home#home'
