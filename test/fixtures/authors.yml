@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  surname: MyString
+  first_name: Andrzej
+  surname: Sapkowski
   bio: MyText
 
 two:
-  first_name: MyString
-  surname: MyString
+  first_name: Radek
+  surname: Rak
   bio: MyText
