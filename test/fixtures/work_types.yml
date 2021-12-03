@@ -1,7 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  literary_work: one
   name: novel
 
 two:
+  literary_work: two
   name: short story

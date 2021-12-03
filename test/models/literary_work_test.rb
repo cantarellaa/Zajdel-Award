@@ -5,6 +5,10 @@ class LiteraryWorkTest < ActiveSupport::TestCase
   #   assert true
   # end
 
+  setup do
+    @author = authors(:one)
+  end
+
   test 'should not save empty literary work' do
     work = LiteraryWork.new
     work.save
@@ -17,6 +21,7 @@ class LiteraryWorkTest < ActiveSupport::TestCase
     work.title = 'Book title'
     work.nominated_year = 2020
     work.category = 'novel'
+    work.author = @author
 
     work.save
 
@@ -25,6 +30,7 @@ class LiteraryWorkTest < ActiveSupport::TestCase
 
   test 'should not save duplicates' do
     work1 = LiteraryWork.new
+    work1.author = @author
     work1.title = 'Book title'
     work1.nominated_year = 2020
     work1.category = 'novel'
@@ -34,6 +40,7 @@ class LiteraryWorkTest < ActiveSupport::TestCase
     assert work1.valid?
 
     work2 = LiteraryWork.new
+    work2.author = @author
     work2.title = 'Book title'
     work2.nominated_year = 2020
     work2.category = 'novel'

@@ -10,6 +10,8 @@
   %b Bio:
   = @author.bio
 
+%p= link_to 'Add Literary Work', new_literary_work_path(author_id: @author)
+
 = link_to 'Edit', edit_author_path(@author)
 \|
 = link_to 'Back', authors_path

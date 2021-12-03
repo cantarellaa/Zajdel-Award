@@ -64,6 +64,6 @@ class WorkTypesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def work_type_params
-      params.require(:work_type).permit(:type)
+      params.require(:work_type).permit(:literary_work, :name)
     end
 end

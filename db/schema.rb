@@ -18,22 +18,25 @@ ActiveRecord::Schema.define(version: 2021_12_03_002522) do
     t.text "bio"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "literary_work_id"
   end
 
   create_table "literary_works", force: :cascade do |t|
+    t.integer "author_id", null: false
     t.string "title", null: false
     t.integer "nominated_year", null: false
     t.string "category", null: false
     t.boolean "has_won", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_literary_works_on_author_id"
   end
 
   create_table "work_types", force: :cascade do |t|
+    t.integer "literary_work_id", null: false
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["literary_work_id"], name: "index_work_types_on_literary_work_id"
   end
 
 end

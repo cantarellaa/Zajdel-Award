@@ -1,5 +1,6 @@
 class LiteraryWorksController < ApplicationController
   before_action :set_literary_work, only: %i[ show edit update destroy ]
+  before_action :set_author, only: [:new, :create]
 
   # GET /literary_works or /literary_works.json
   def index
@@ -12,7 +13,7 @@ class LiteraryWorksController < ApplicationController
 
   # GET /literary_works/new
   def new
-    @literary_work = LiteraryWork.new
+    @literary_work = @author.literary_works.new
   end
 
   # GET /literary_works/1/edit
@@ -21,7 +22,8 @@ class LiteraryWorksController < ApplicationController
 
   # POST /literary_works or /literary_works.json
   def create
-    @literary_work = LiteraryWork.new(literary_work_params)
+    @literary_work = @author.literary_works.new(literary_work_params)
+
 
     respond_to do |format|
       if @literary_work.save
@@ -62,8 +64,12 @@ class LiteraryWorksController < ApplicationController
       @literary_work = LiteraryWork.find(params[:id])
     end
 
+    def set_author
+      @author = Author.find_by(id: params[:author_id]) || Author.find(literary_work_params[:author_id])
+    end
+
     # Only allow a list of trusted parameters through.
     def literary_work_params
-      params.require(:literary_work).permit(:title, :nominated_year, :category, :has_won)
+      params.require(:literary_work).permit(:author_id, :title, :nominated_year, :category, :has_won)
     end
 end

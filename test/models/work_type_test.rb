@@ -5,6 +5,10 @@ class WorkTypeTest < ActiveSupport::TestCase
   #   assert true
   # end
 
+  setup do
+    @literary_work = literary_works(:one)
+  end
+
   test 'should not save empty literary work' do
     work_type = WorkType.new
     work_type.save
@@ -15,6 +19,7 @@ class WorkTypeTest < ActiveSupport::TestCase
   test 'should save valid literary work' do
     work_type = WorkType.new
     work_type.name = 'novel'
+    work_type.literary_work = @literary_work
 
     work_type.save
 
@@ -24,6 +29,7 @@ class WorkTypeTest < ActiveSupport::TestCase
   test 'should not save duplicates' do
     work_type1 = WorkType.new
     work_type1.name = 'novel'
+    work_type1.literary_work = @literary_work
 
     work_type1.save
 
@@ -31,6 +37,7 @@ class WorkTypeTest < ActiveSupport::TestCase
 
     work_type2 = WorkType.new
     work_type2.name = 'novel'
+    work_type2.literary_work = @literary_work
 
     work_type2.save
 

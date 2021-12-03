@@ -1,5 +1,6 @@
 class Author < ApplicationRecord
-  belongs_to :literary_work
+
+  has_many :literary_works, dependent: :destroy
 
   validates :first_name, presence: true
   validates :surname, presence: true
