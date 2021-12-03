@@ -13,9 +13,12 @@
             <button class="navbar-toggler navbar-toggler-right">{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
             <i class="fa fa-bars"></i></button>
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
+
+          %div.header-logo
+            = link_to image_tag( 'logo/zajdel-logo.png'), '/'
+
           %hr/
           %ul.navbar-nav.d-flex.justify-content-end
-            %li.nav-item.active
             %li.nav-item
               %a.nav-link{:href => "/about"} About
             %li.nav-item
