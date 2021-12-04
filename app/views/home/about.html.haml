@@ -9,7 +9,15 @@
     = render "shared/header"
 
     .content
-      %h1= t('.title')
-      %p= t('.about')
+      .about-left
+        %h1= t('.title')
+        %p= t('.about1')
+        %p= t('.about2')
+        %p= t('.about3')
+        %p= t('.about4')
+        %p= t('.about5')
+      .about-right
+        = image_tag( 'zajdel_statuette.png')
+        %p= t('.img-description')
 
     = render "shared/footer"
