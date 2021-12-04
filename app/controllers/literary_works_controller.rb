@@ -54,6 +54,7 @@ class LiteraryWorksController < ApplicationController
     @literary_work.destroy
     respond_to do |format|
       format.html { redirect_to literary_works_url, notice: "Literary work was successfully destroyed." }
+      format.js { flash[:notice] = 'Literary work was successfully destroyed.'}
       format.json { head :no_content }
     end
   end

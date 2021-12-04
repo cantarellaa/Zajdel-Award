@@ -23,13 +23,13 @@
 
         %tbody
           - @authors.each do |author|
-            %tr
+            %tr{id: "author#{author.id}"}
               %td= author.first_name
               %td= author.surname
               %td= author.bio
               %td= link_to 'Show', author
               %td= link_to 'Edit', edit_author_path(author)
-              %td= link_to 'Destroy', author, method: :delete, data: { confirm: 'Are you sure?' }
+              %td= link_to 'Destroy', author, method: :delete, data: { confirm: 'Are you sure?' }, :remote => true
 
         %br
 
