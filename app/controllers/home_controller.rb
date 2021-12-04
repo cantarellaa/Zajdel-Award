@@ -2,6 +2,21 @@ class HomeController < ApplicationController
   def home
   end
 
+  def about
+  end
+
+  def credits
+  end
+
+  def history
+  end
+
+  def patron
+  end
+
+  def voting
+  end
+
   def contact
   end
 

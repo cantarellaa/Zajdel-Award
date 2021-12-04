@@ -1,17 +1,30 @@
-%p#notice= notice
+!!!
+%html{:lang => "en"}
+  %head
+    %title Author Details
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+  %body
+    = render "shared/header"
 
-%p
-  %b First name:
-  = @author.first_name
-%p
-  %b Surname:
-  = @author.surname
-%p
-  %b Bio:
-  = @author.bio
+    .content
+      %p#notice= notice
 
-%p= link_to 'Add Literary Work', new_literary_work_path(author_id: @author)
+      %p
+        %b First name:
+        = @author.first_name
+      %p
+        %b Surname:
+        = @author.surname
+      %p
+        %b Bio:
+        = @author.bio
 
-= link_to 'Edit', edit_author_path(@author)
-\|
-= link_to 'Back', authors_path
+      %p= link_to 'Add Literary Work', new_literary_work_path(author_id: @author)
+
+      = link_to 'Edit', edit_author_path(@author)
+      \|
+      = link_to 'Back', authors_path
+
+    = render "shared/footer"

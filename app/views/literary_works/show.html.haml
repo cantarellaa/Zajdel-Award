@@ -1,18 +1,30 @@
-%p#notice= notice
+!!!
+%html{:lang => "en"}
+  %head
+    %title Show literary work
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+  %body
+    = render "shared/header"
 
-%p
-  %b Title:
-  = @literary_work.title
-%p
-  %b Nominated year:
-  = @literary_work.nominated_year
-%p
-  %b Category:
-  = @literary_work.category
-%p
-  %b Has won:
-  = @literary_work.has_won
+    .content
+      %p#notice= notice
 
-= link_to 'Edit', edit_literary_work_path(@literary_work)
-\|
-= link_to 'Back', literary_works_path
+      %p
+        %b Title:
+        = @literary_work.title
+      %p
+        %b Nominated year:
+        = @literary_work.nominated_year
+      %p
+        %b Category:
+        = @literary_work.category
+      %p
+        %b Has won:
+        = @literary_work.has_won
+
+      = link_to 'Edit', edit_literary_work_path(@literary_work)
+      = link_to 'Back', literary_works_path
+
+    = render "shared/footer"
