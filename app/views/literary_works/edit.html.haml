@@ -1,19 +1,7 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Edit Literary Work
-    %meta{:charset => "UTF-8"}/
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    %meta{:content => "", :name => "description"}/
-  %body
-    = render "shared/header"
+%body
+  %h1 Editing literary work
 
-    .content
-      %h1 Editing literary work
+  = render 'form'
 
-      = render 'form'
-
-      = link_to 'Show', @literary_work
-      = link_to 'Back', literary_works_path
-
-    = render "shared/footer"
+  = link_to 'Show', @literary_work
+  = link_to 'Back', literary_works_path

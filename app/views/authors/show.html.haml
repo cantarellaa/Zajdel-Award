@@ -1,40 +1,26 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Author Details
-    %meta{:charset => "UTF-8"}/
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    %meta{:content => "", :name => "description"}/
-  %body
-    = render "shared/header"
+%body
+  %p
+    %b First name:
+    = @author.first_name
+  %p
+    %b Surname:
+    = @author.surname
+  %p
+    %b Bio:
+    = @author.bio
 
-    .content
-      %p#notice= notice
+  %p Nominated works:
+  %table
+    %tbody
+    - @author.literary_works.each do |literary_work|
+      %tr{id: "literary_work_#{literary_work.id}"}
+        %td= literary_work.title
+        %td= link_to 'Show', literary_work
+        %td= link_to 'Edit', edit_literary_work_path(literary_work)
+        %td= link_to 'Destroy', literary_work, :method => :delete, :data => { :confirm => 'Are you sure?' }, :remote => true
 
-      %p
-        %b First name:
-        = @author.first_name
-      %p
-        %b Surname:
-        = @author.surname
-      %p
-        %b Bio:
-        = @author.bio
+  %p= link_to 'Add Literary Work', new_literary_work_path(author_id: @author)
 
-      %p Nominated works:
-      %table
-        %tbody
-        - @author.literary_works.each do |literary_work|
-          %tr{id: "literary_work_#{literary_work.id}"}
-            %td= literary_work.title
-            %td= link_to 'Show', literary_work
-            %td= link_to 'Edit', edit_literary_work_path(literary_work)
-            %td= link_to 'Destroy', literary_work, :method => :delete, :data => { :confirm => 'Are you sure?' }, :remote => true
-
-      %p= link_to 'Add Literary Work', new_literary_work_path(author_id: @author)
-
-      = link_to 'Edit', edit_author_path(@author)
-      \|
-      = link_to 'Back', authors_path
-
-    = render "shared/footer"
+  = link_to 'Edit', edit_author_path(@author)
+  \|
+  = link_to 'Back', authors_path

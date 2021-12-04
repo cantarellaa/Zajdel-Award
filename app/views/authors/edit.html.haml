@@ -1,19 +1,7 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Edit Author
-    %meta{:charset => "UTF-8"}/
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    %meta{:content => "", :name => "description"}/
-  %body
-    = render "shared/header"
+%body
+  %h1 Editing author
 
-    .content
-      %h1 Editing author
+  = render 'form'
 
-      = render 'form'
-
-      = link_to 'Show', @author
-      = link_to 'Back', authors_path
-
-    = render "shared/footer"
+  = link_to 'Show', @author
+  = link_to 'Back', authors_path

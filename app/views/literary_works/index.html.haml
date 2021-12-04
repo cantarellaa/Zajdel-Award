@@ -1,40 +1,28 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Literary works list
-    %meta{:charset => "UTF-8"}/
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    %meta{:content => "", :name => "description"}/
-  %body
-    = render "shared/header"
+%body
+  %h1 Listing literary works
 
-    .content
-      %h1 Listing literary works
+  %table
+    %thead
+      %tr
+        %th Author
+        %th
+        %th Title
+        %th Nominated year
+        %th Category
+        %th Has won
+        %th
+        %th
+        %th
 
-      %table
-        %thead
-          %tr
-            %th Author
-            %th
-            %th Title
-            %th Nominated year
-            %th Category
-            %th Has won
-            %th
-            %th
-            %th
-
-        %tbody
-          - @literary_works.each do |literary_work|
-            %tr
-              %td= literary_work.author.first_name
-              %td= literary_work.author.surname
-              %td= literary_work.title
-              %td= literary_work.nominated_year
-              %td= literary_work.category
-              %td= literary_work.has_won
-              %td= link_to 'Show', literary_work
-              %td= link_to 'Edit', edit_literary_work_path(literary_work)
-              %td= link_to 'Destroy', literary_work, method: :delete, data: { confirm: 'Are you sure?' }
-
-      = render "shared/footer"
+    %tbody
+      - @literary_works.each do |literary_work|
+        %tr
+          %td= literary_work.author.first_name
+          %td= literary_work.author.surname
+          %td= literary_work.title
+          %td= literary_work.nominated_year
+          %td= literary_work.category
+          %td= literary_work.has_won
+          %td= link_to 'Show', literary_work
+          %td= link_to 'Edit', edit_literary_work_path(literary_work)
+          %td= link_to 'Destroy', literary_work, method: :delete, data: { confirm: 'Are you sure?' }
