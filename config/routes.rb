@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   get 'credits', to: 'home#credits'
   get 'voting', to: 'home#voting'
 
+  get 'admin', to: 'home#admin'
+  get 'laureates', to: 'home#laureates'
+  get 'nominated_authors', to: 'home#nominated_authors'
+
   post 'request_contact', to: 'home#request_contact'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

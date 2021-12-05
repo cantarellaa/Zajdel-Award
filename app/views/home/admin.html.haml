@@ -1,0 +1,12 @@
+%body
+  %nav.admin-buttons
+    - if user_signed_in?
+      = "#{current_user.email} |"
+      = link_to t('profile'), edit_user_registration_path, class: 'button'
+      = link_to t('logout'), destroy_user_session_path, method: 'delete', class: 'button'
+    - else
+      = link_to t('login'), new_user_session_path, class: 'button'
+      = link_to t('sign_up'), new_user_registration_path, class: 'button'
+
+  - flash.each do |key, value|
+    = content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank?

@@ -1,52 +1,32 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Header
-    %meta{:charset => "UTF-8"}/
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    %meta{:content => "", :name => "description"}/
-  %body
-    %nav
-      - if user_signed_in?
-        = "#{current_user.email} |"
-        = link_to t('profile'), edit_user_registration_path
-        = '|'
-        = link_to t('logout'), destroy_user_session_path, method: 'delete'
-      - else
-        = link_to t('login'), new_user_session_path
-        = '|'
-        = link_to t('sign_up'), new_user_registration_path
+%body
+  %header.header
+    %nav.navbar.navbar-expand-lg.fixed-top.py-3
+      .container
+        /
+          <button class="navbar-toggler navbar-toggler-right">{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+          <i class="fa fa-bars"></i></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
 
-    - flash.each do |key, value|
-      = content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank?
-    %header.header
-      %nav.navbar.navbar-expand-lg.fixed-top.py-3
-        .container
-          /
-            <button class="navbar-toggler navbar-toggler-right">{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
-            <i class="fa fa-bars"></i></button>
-            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        %div.header-logo
+          = link_to image_tag( 'logo/zajdel-logo.png'), '/'
 
-          %div.header-logo
-            = link_to image_tag( 'logo/zajdel-logo.png'), '/'
-
-          %hr/
-          %ul.navbar-nav.d-flex.justify-content-end
-            %li.nav-item
-              %a.nav-link{:href => "/about"} About
-            %li.nav-item
-              %a.nav-link{:href => "/history"} History
-            %li.nav-item
-              %a.nav-link{:href => "credits"} Credits
-            %li.nav-item
-              %a.nav-link{:href => "/patron"} Janusz A. Zajdel
-            %li.nav-item
-              %a.nav-link{:href => "/literary_works"} Laureates
-            %li.nav-item
-              %a.nav-link{:href => "/authors"} Nominated authors
-            %li.nav-item
-              %a.nav-link{:href => "/voting"} Voting
-            %li.nav-item
-              %a.nav-link{:href => "/contact"} Contact
-          %hr/
-          / </div>
+        %hr/
+        %ul.navbar-nav.d-flex.justify-content-end
+          %li.nav-item
+            %a.nav-link{:href => "/about"} About
+          %li.nav-item
+            %a.nav-link{:href => "/history"} History
+          %li.nav-item
+            %a.nav-link{:href => "credits"} Credits
+          %li.nav-item
+            %a.nav-link{:href => "/patron"} Janusz A. Zajdel
+          %li.nav-item
+            %a.nav-link{:href => "/literary_works"} Laureates
+          %li.nav-item
+            %a.nav-link{:href => "/authors"} Nominated authors
+          %li.nav-item
+            %a.nav-link{:href => "/voting"} Voting
+          %li.nav-item
+            %a.nav-link{:href => "/contact"} Contact
+        %hr/
+        / </div>

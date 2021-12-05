@@ -1,6 +1,7 @@
 class LiteraryWorksController < ApplicationController
   before_action :set_literary_work, only: %i[ show edit update destroy ]
   before_action :set_author, only: [:new, :create]
+  before_action :authenticate_user!
 
   # GET /literary_works or /literary_works.json
   def index

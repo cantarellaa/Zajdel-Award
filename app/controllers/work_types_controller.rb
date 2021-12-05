@@ -1,5 +1,6 @@
 class WorkTypesController < ApplicationController
   before_action :set_work_type, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
 
   # GET /work_types or /work_types.json
   def index
