@@ -1,23 +1,11 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title About the Award
-    %meta{:charset => "UTF-8"}/
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    %meta{:content => "", :name => "description"}/
-  %body
-    = render "shared/header"
-
-    .content
-      .about-left
-        %h1= t('.title')
-        %p= t('.about1')
-        %p= t('.about2')
-        %p= t('.about3')
-        %p= t('.about4')
-        %p= t('.about5')
-      .about-right
-        = image_tag( 'zajdel_statuette.png')
-        %p= t('.img-description')
-
-    = render "shared/footer"
+%body
+  .about-left
+    %h1= t('.title')
+    %p= t('.about1')
+    %p= t('.about2')
+    %p= t('.about3')
+    %p= t('.about4')
+    %p= t('.about5')
+  .about-right
+    = image_tag( 'zajdel_statuette.png')
+    %p= t('.img-description')

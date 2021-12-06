@@ -1,22 +1,10 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Janusz A. Zajdel
-    %meta{:charset => "UTF-8"}/
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    %meta{:content => "", :name => "description"}/
-  %body
-    = render "shared/header"
-
-    .content
-      .about-left
-        %h1= t('.title')
-        %p= t('.about-zajdel1')
-        %p= t('.about-zajdel2')
-        %p= t('.about-zajdel3')
-        %p= t('.about-zajdel4')
-      .about-right
-        = image_tag( 'zajdel a janusz 2.jpg')
-        %p= t('.img-description')
-
-    = render "shared/footer"
+ %body
+  .about-left
+    %h1= t('.title')
+    %p= t('.about-zajdel1')
+    %p= t('.about-zajdel2')
+    %p= t('.about-zajdel3')
+    %p= t('.about-zajdel4')
+  .about-right
+    = image_tag( 'zajdel a janusz 2.jpg')
+    %p= t('.img-description')

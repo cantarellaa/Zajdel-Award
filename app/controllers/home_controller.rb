@@ -2,6 +2,32 @@ class HomeController < ApplicationController
   def home
   end
 
+  def about
+  end
+
+  def admin
+  end
+
+  def credits
+  end
+
+  def history
+  end
+
+  def laureates
+    @literary_works = LiteraryWork.order(nominated_year: :desc).where(has_won: true)
+  end
+
+  def nominated_authors
+    @authors = Author.order(surname: :asc).where.not(bio: [nil, ""])
+  end
+
+  def patron
+  end
+
+  def voting
+  end
+
   def contact
   end
 

@@ -1,21 +1,9 @@
-!!!
-%html{:lang => "en"}
-  %head
-    %title Voting System
-    %meta{:charset => "UTF-8"}/
-    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
-    %meta{:content => "", :name => "description"}/
-  %body
-    = render "shared/header"
-
-    .content
-      .about-left
-        %h1= t('.title')
-        %p= t('.voting1')
-        %p= t('.voting2')
-        %p= t('.voting3')
-      .about-right
-        = image_tag( 'zajdel-booth.jpg')
-        %p= t('.img-description')
-
-    = render "shared/footer"
+ %body
+  .about-left
+    %h1= t('.title')
+    %p= t('.voting1')
+    %p= t('.voting2')
+    %p= t('.voting3')
+  .about-right
+    = image_tag( 'zajdel-booth.jpg')
+    %p= t('.img-description')

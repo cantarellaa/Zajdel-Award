@@ -43,11 +43,6 @@ h1 {
   text-transform: uppercase;
 }
 
-form label, form input {
-display: block;
-margin: 10px;
-}
-
 .container {
   width: auto;
   padding: 0;
@@ -60,6 +55,73 @@ margin: 10px;
   display: flex;
 }
 
+.button {
+  background: #CDB370;
+  box-shadow: 0px 4px 12px rgba(205, 179, 112, 0.2);
+  border-radius: 8px;
+
+  color: $bg-color;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  font-size: 1.8rem;
+  margin: 2rem;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  background: #CDB370;
+  box-shadow: 0px 4px 12px rgba(205, 179, 112, 0.2);
+  border-radius: 8px;
+  border: none;
+
+  color: $bg-color;
+  padding: 8px 23px;
+  font-size: 1.8rem;
+  margin: 2rem 0;
+  width: auto;
+}
+
+.button:hover, .button:focus {
+  text-decoration: none;
+  color: $bg-color;
+}
+
+input {
+  padding: 5px
+}
+
+form label, form input {
+  display: block;
+  margin: 10px 0;
+  width: 35%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 0;
+}
+
+textarea {
+  height: 250px;
+}
+
+a {
+  color: #CDB370;
+}
+
+a:hover {
+  color: $hover-highlight-color;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.table-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
 
 /** HEADER **/
 

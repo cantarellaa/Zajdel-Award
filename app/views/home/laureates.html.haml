@@ -1,0 +1,21 @@
+%body
+  %h1 Laureates
+
+  .table-container
+    %table
+      %thead
+        %tr
+          %th Author's Name
+          %th Surname
+          %th Title
+          %th Nominated year
+          %th Category
+
+      %tbody
+        - @literary_works.each do |literary_work|
+          %tr
+            %td= literary_work.author.first_name
+            %td= literary_work.author.surname
+            %td= literary_work.title
+            %td= literary_work.nominated_year
+            %td= literary_work.category
