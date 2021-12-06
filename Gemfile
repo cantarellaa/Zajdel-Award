@@ -61,6 +61,8 @@ gem 'modernizr-rails'
 
 gem 'jquery-rails'
 
+gem 'devise'
+
 gem 'rails-controller-testing'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

@@ -1,0 +1,16 @@
+%body
+  %p
+    %b Title:
+    = @literary_work.title
+  %p
+    %b Nominated year:
+    = @literary_work.nominated_year
+  %p
+    %b Category:
+    = @literary_work.category
+  %p
+    %b Has won:
+    = @literary_work.has_won
+
+  = link_to 'Edit', edit_literary_work_path(@literary_work)
+  = link_to 'Back', literary_works_path
