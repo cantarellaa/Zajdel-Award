@@ -1,6 +1,18 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.about-left {
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.about-right {
+  // width: 30%
+}
+
+.about-right img {
+  max-width: 18rem;
+}
 .admin-buttons {
   display: flex;
   justify-content: center;

@@ -58,33 +58,28 @@ en:
 
     about:
       title: About the Award
-      about: >
-        Janusz A. Zajdel Award (often called Zajdel) is an annual award given by the speculactive
+      about1: Janusz A. Zajdel Award (often called Zajdel) is an annual award given by the speculactive
         fiction fans to the authors of the best Polish novel and the best Polish shorter story of the
         previous year.
-
-        There are two stages in place to determine the winners. In the first stage each speculative
+      about2: There are two stages in place to determine the winners. In the first stage each speculative
         fiction fan can nominate up to five novels and five shorter stories. The nomination
         committee counts the votes and publishes the shortlist. Usually there are five pieces in
         each category but depending on the results of nominations amount may be higher or lower.
-
-        The second stage takes place at the Polish national convention – Polcon. Each member of
+      about3: The second stage takes place at the Polish national convention – Polcon. Each member of
         the con receives a ballot and can cast a vote (traditionally before noon on Saturday).
-
-        Supporting members receive their ballots earlier via mail and need to send them to the
+      about4: Supporting members receive their ballots earlier via mail and need to send them to the
         concom before Polcon starts.
-
-        The Fandom Forum taking place on Saturday at Polcon chooses the counting committee
+      about5: The Fandom Forum taking place on Saturday at Polcon chooses the counting committee
         and then the counting starts. The results are announced on Saturday evening during the
         Janusz. A. Zajdel Award ceremony. Winners receive the Zajdel Award statuette.
+      img-description: The statuette made by Wiesaw Bielak
 
     credits:
       title: Credits
 
     history:
       title: History
-      history: >
-        The story of the Award dates back to 1984 when in the city of Łódź polish SFF clubs
+      history1: The story of the Award dates back to 1984 when in the city of Łódź polish SFF clubs
         decided to establish Sfinks Fandom Award. At this time Award was supposed to be given
         only in one category – the best speculative fiction literary work. In the beginning of 1985 in
         Świnoujście it was decided that the award will be awarded during Polcons. On the 8 th June
@@ -93,33 +88,31 @@ en:
         organizers invited author to the first Polcon that was taking place in Błażejewko in October
         1985. Unfortunately Janusz. A. Zajdel died on 19 th July 1985. His wife accepted the Award
         in his name at Polcon 1986 in Katowice.
-
-        The Polcon Organization Committee decided to change the name of the Award to The
+      history2: The Polcon Organization Committee decided to change the name of the Award to The
         Janusz. A. Zajdel Award and Jadwiga Zajdel became the patron of the Award. Since then it
         is usually her who presents the Award during Polcons.
-
-        Since 1990 Janusz A. Zajdel Award voting was given to the Polcon members (before it was
+      history3: Since 1990 Janusz A. Zajdel Award voting was given to the Polcon members (before it was
         voted by the representatives of SFF clubs) and the nominations became open to all fans of
         the speculative fiction.
-
-        The statuette was firstly presented during Polcon in 1991. It was designed by Wiesław
+      history4: The statuette was firstly presented during Polcon in 1991. It was designed by Wiesław
         Bielak - professor of Kraków Academy of the Fine Arts.
         In 1992 last major change was applied to the award. It was decided that there will be two
         categories instead of one.
+      img-description: Jadwiga Zajdel during 2013 Award Gala
 
     patron:
       title: Janusz A. Zajdel
-      about-zajdel: >
-        The patron and the first person to be awarded by the fandom community. Born in 1938 in Warsaw, he was not only an author of science-fiction, but also a precursor of socio-fantasy in Poland. He graduated from physics at the University of Warsaw and he was working for several years in Centralne Laboratorium Ochrony Radiologicznej as a specialist in physics of atomic nucleus. As a fantasy author he made his debut in “Młody technik” magazine with a short story “Tau Wieloryba”.
+      about-zajdel1: The patron and the first person to be awarded by the fandom community. Born in 1938 in Warsaw, he was not only an author of science-fiction, but also a precursor of socio-fantasy in Poland. He graduated from physics at the University of Warsaw and he was working for several years in Centralne Laboratorium Ochrony Radiologicznej as a specialist in physics of atomic nucleus.
+      about-zajdel2: As a fantasy author he made his debut in “Młody technik” magazine with a short story “Tau Wieloryba”.
         He published over 50 of short stories in various magazines. His first works were faithful to classic SF convention. His main achievement was a series of socio-political novels, with the first in this cycle “Cylinder van Troffa” published in 1980. In his works Zajdel presented and studied totalitarian, controlled and restricted societies. Often they were dystopian stories proving the impossibility of creating a perfect society by forcibly established rules. “Limes inferior” was for many years thought to be his best work, showing Earth where alien civilization enforced “one true” system, which is constantly monitored by “Big Brother”.
-        His works were translated into Belarusian, Czech, Esperanto, Finnish, German, Russian, Slovenian and Hungarian. He was an active member of international science fiction fandom and World SF. In 1973 he received Magnum Trophaeum badge for cooperation with „Młody Technik”. In 1980 he was awarded by Ministry of Culture and Art for “Cylinder van Troffa”. Four years later he was given Złota Sepulka for "Wyjście z cienia”. He died in 1985 of pulmonary cancer and he didn’t have enough time to collect Polish Fandom’s Award Sfinks for “Paradyzja”. In 1986 the name of this award was changed to honor Janusz A. Zajdel.
+      about-zajdel3: His works were translated into Belarusian, Czech, Esperanto, Finnish, German, Russian, Slovenian and Hungarian. He was an active member of international science fiction fandom and World SF. In 1973 he received Magnum Trophaeum badge for cooperation with „Młody Technik”. In 1980 he was awarded by Ministry of Culture and Art for “Cylinder van Troffa”. Four years later he was given Złota Sepulka for "Wyjście z cienia”.
+      about-zajdel4: He died in 1985 of pulmonary cancer and he didn’t have enough time to collect Polish Fandom’s Award Sfinks for “Paradyzja”. In 1986 the name of this award was changed to honor Janusz A. Zajdel.
+      img-description: The author himself
 
     voting:
       title: Voting System
-      voting: >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat eros viverra blandit eleifend adipiscing egestas ipsum tellus. Nibh morbi ut tempus odio integer et vitae non. Dui, mauris risus tristique donec augue sed habitant orci congue. Ac ultricies vulputate cras volutpat malesuada pharetra, et vulputate. Sed ut facilisi velit aliquam in odio tortor neque. Semper venenatis ullamcorper tortor elit, nibh a sit venenatis. Arcu neque fusce enim viverra vitae massa at.
+      voting1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat eros viverra blandit eleifend adipiscing egestas ipsum tellus. Nibh morbi ut tempus odio integer et vitae non. Dui, mauris risus tristique donec augue sed habitant orci congue. Ac ultricies vulputate cras volutpat malesuada pharetra, et vulputate. Sed ut facilisi velit aliquam in odio tortor neque. Semper venenatis ullamcorper tortor elit, nibh a sit venenatis. Arcu neque fusce enim viverra vitae massa at.
         Ultricies sed faucibus dictum euismod suspendisse ut.
-
-        Ligula adipiscing elit sed placerat ac ultrices condimentum. Nisi, vulputate in et molestie at dictumst neque quis. Hac vitae feugiat leo ullamcorper. Sem a bibendum nunc sapien massa habitant. Urna volutpat netus fermentum sed ornare lectus. Elit, nunc mattis amet eu sit tortor. Amet turpis ut enim parturient est facilisis proin. At egestas ut quam vitae purus fringilla scelerisque. Nulla facilisi libero quis scelerisque eget molestie volutpat. Nullam et donec tellus hac. Id praesent non suscipit eu, leo tristique duis euismod molestie. Gravida urna, sagittis, viverra viverra.
-
-        Ligula adipiscing elit sed placerat ac ultrices condimentum. Nisi, vulputate in et molestie at dictumst neque quis. Hac vitae feugiat leo ullamcorper. Sem a bibendum nunc sapien massa habitant. Urna volutpat netus fermentum sed ornare lectus. Elit, nunc mattis amet eu sit tortor.
+      voting2: Ligula adipiscing elit sed placerat ac ultrices condimentum. Nisi, vulputate in et molestie at dictumst neque quis. Hac vitae feugiat leo ullamcorper. Sem a bibendum nunc sapien massa habitant. Urna volutpat netus fermentum sed ornare lectus. Elit, nunc mattis amet eu sit tortor. Amet turpis ut enim parturient est facilisis proin. At egestas ut quam vitae purus fringilla scelerisque. Nulla facilisi libero quis scelerisque eget molestie volutpat. Nullam et donec tellus hac. Id praesent non suscipit eu, leo tristique duis euismod molestie. Gravida urna, sagittis, viverra viverra
+      voting3: Ligula adipiscing elit sed placerat ac ultrices condimentum. Nisi, vulputate in et molestie at dictumst neque quis. Hac vitae feugiat leo ullamcorper. Sem a bibendum nunc sapien massa habitant. Urna volutpat netus fermentum sed ornare lectus. Elit, nunc mattis amet eu sit tortor.
+      img-description: The stand with the ballot box, Zielona Góra 2021

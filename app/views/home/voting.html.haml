@@ -1,3 +1,9 @@
-%body
-  %h1= t('.title')
-  %p= t('.voting')
+ %body
+  .about-left
+    %h1= t('.title')
+    %p= t('.voting1')
+    %p= t('.voting2')
+    %p= t('.voting3')
+  .about-right
+    = image_tag( 'zajdel-booth.jpg')
+    %p= t('.img-description')
