@@ -1,10 +1,17 @@
 %body
   %h1 Nominated authors
 
-  %table
-    %tbody
-      - @authors.each do |author|
-        %tr{id: "author#{author.id}"}
-          %td= author.first_name
-          %td= author.surname
-          %td= author.bio
+  .table-container
+    %table
+      %thead
+        %tr
+          %th First Name
+          %th Surname
+          %th Biography
+
+      %tbody
+        - @authors.each do |author|
+          %tr{id: "author#{author.id}"}
+            %td{class: "test"}= author.first_name
+            %td= author.surname
+            %td= author.bio

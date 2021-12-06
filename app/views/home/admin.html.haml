@@ -1,7 +1,9 @@
 %body
   %nav.admin-buttons
     - if user_signed_in?
-      = "#{current_user.email} |"
+      = "Welcome #{current_user.email}!"
+      %a{:href => "/authors"} All authors
+      %a{:href => "/literary_works"} All works
       = link_to t('profile'), edit_user_registration_path, class: 'button'
       = link_to t('logout'), destroy_user_session_path, method: 'delete', class: 'button'
     - else
