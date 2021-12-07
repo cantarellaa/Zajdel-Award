@@ -35,8 +35,11 @@ en:
 
   home:
     home:
-      title: Janusz A. Zajdel Award
-      welcome: Welcome to the Zajdel Award English page!
+      current-laureates: 2021 Laureates
+      novel: NOVEL
+      short-story: SHORT STORY
+      novel-laureates: AGNIESZKA HAŁAS - “Czerń nie zapomina”
+      short-story-laureate: KRZYSZTOF MATKOWSKI, KRZYSZTOF REWIUK - “Święci z Vukovaru”
 
     contact:
       title: Contact Us
@@ -57,25 +60,7 @@ en:
       email_sent: Thank you. We will be in touch shortly.
 
     about:
-      title: About the Award
-      about1: Janusz A. Zajdel Award (often called Zajdel) is an annual award given by the speculactive
-        fiction fans to the authors of the best Polish novel and the best Polish shorter story of the
-        previous year.
-      about2: There are two stages in place to determine the winners. In the first stage each speculative
-        fiction fan can nominate up to five novels and five shorter stories. The nomination
-        committee counts the votes and publishes the shortlist. Usually there are five pieces in
-        each category but depending on the results of nominations amount may be higher or lower.
-      about3: The second stage takes place at the Polish national convention – Polcon. Each member of
-        the con receives a ballot and can cast a vote (traditionally before noon on Saturday).
-      about4: Supporting members receive their ballots earlier via mail and need to send them to the
-        concom before Polcon starts.
-      about5: The Fandom Forum taking place on Saturday at Polcon chooses the counting committee
-        and then the counting starts. The results are announced on Saturday evening during the
-        Janusz. A. Zajdel Award ceremony. Winners receive the Zajdel Award statuette.
       img-description: The statuette made by Wiesaw Bielak
-
-    credits:
-      title: Credits
 
     history:
       title: History
@@ -111,8 +96,25 @@ en:
 
     voting:
       title: Voting System
-      voting1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat eros viverra blandit eleifend adipiscing egestas ipsum tellus. Nibh morbi ut tempus odio integer et vitae non. Dui, mauris risus tristique donec augue sed habitant orci congue. Ac ultricies vulputate cras volutpat malesuada pharetra, et vulputate. Sed ut facilisi velit aliquam in odio tortor neque. Semper venenatis ullamcorper tortor elit, nibh a sit venenatis. Arcu neque fusce enim viverra vitae massa at.
-        Ultricies sed faucibus dictum euismod suspendisse ut.
-      voting2: Ligula adipiscing elit sed placerat ac ultrices condimentum. Nisi, vulputate in et molestie at dictumst neque quis. Hac vitae feugiat leo ullamcorper. Sem a bibendum nunc sapien massa habitant. Urna volutpat netus fermentum sed ornare lectus. Elit, nunc mattis amet eu sit tortor. Amet turpis ut enim parturient est facilisis proin. At egestas ut quam vitae purus fringilla scelerisque. Nulla facilisi libero quis scelerisque eget molestie volutpat. Nullam et donec tellus hac. Id praesent non suscipit eu, leo tristique duis euismod molestie. Gravida urna, sagittis, viverra viverra
-      voting3: Ligula adipiscing elit sed placerat ac ultrices condimentum. Nisi, vulputate in et molestie at dictumst neque quis. Hac vitae feugiat leo ullamcorper. Sem a bibendum nunc sapien massa habitant. Urna volutpat netus fermentum sed ornare lectus. Elit, nunc mattis amet eu sit tortor.
+      voting1: Instant-runoff voting (IRV) is a type of ranked preferential vote counting method used in single-seat elections with more than two candidates. IRV is also sometimes referred to as the alternative vote (AV), preferential voting, single transferable voting (New Zealand), or, in the United States, ranked-choice voting (RCV), though these names are also used for other systems.
+      voting2: Like all ranked ballot voting systems, instead of indicating support for only one candidate, voters in IRV elections can rank the candidates in order of preference. Ballots are initially counted for each voter's top choice. If a candidate has more than half of the vote based on first-choices, that candidate wins. If not, then the candidate with the fewest votes is eliminated.
+      voting3: The voters who selected the defeated candidate as a first choice then have their votes added to the totals of their next choice. This process continues until a candidate has more than half of the votes. When the field is reduced to two, it has become an "instant runoff" that allows a comparison of the top two candidates head-to-head.
       img-description: The stand with the ballot box, Zielona Góra 2021
+
+  shared:
+    about:
+      title: About the Award
+      about1: Janusz A. Zajdel Award (often called Zajdel) is an annual award given by the speculactive
+        fiction fans to the authors of the best Polish novel and the best Polish shorter story of the
+        previous year.
+      about2: There are two stages in place to determine the winners. In the first stage each speculative
+        fiction fan can nominate up to five novels and five shorter stories. The nomination
+        committee counts the votes and publishes the shortlist. Usually there are five pieces in
+        each category but depending on the results of nominations amount may be higher or lower.
+      about3: The second stage takes place at the Polish national convention – Polcon. Each member of
+        the con receives a ballot and can cast a vote (traditionally before noon on Saturday).
+      about4: Supporting members receive their ballots earlier via mail and need to send them to the
+        concom before Polcon starts.
+      about5: The Fandom Forum taking place on Saturday at Polcon chooses the counting committee
+        and then the counting starts. The results are announced on Saturday evening during the
+        Janusz. A. Zajdel Award ceremony. Winners receive the Zajdel Award statuette.

@@ -1,3 +1,23 @@
 %body
-  %h1= t('.title')
-  %p= t('.welcome')
+  .content
+    .about-left
+      .home-content
+        = image_tag( 'home-page-banner.png', class:"banner-img")
+        %hr/
+        %h2= t('.current-laureates')
+        .laureates-container
+          %div
+            = image_tag( 'covers/pow-2020.jpg', class:"cover-img")
+            %div.mt-15
+              %p.bold.ta-center= t('.novel')
+              %p.ta-center= t('.novel-laureates')
+          %div
+            = image_tag( 'covers/op-2020.jpg', class:"cover-img")
+            %div.mt-15.laureates-desc
+              %p.bold.ta-center= t('.short-story')
+              %p.ta-center= t('.short-story-laureate')
+        .laureates-container
+
+
+        %hr/
+        = render "shared/about"
