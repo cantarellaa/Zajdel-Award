@@ -8,9 +8,6 @@ class HomeController < ApplicationController
   def admin
   end
 
-  def credits
-  end
-
   def history
   end
 

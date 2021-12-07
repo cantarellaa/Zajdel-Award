@@ -7,7 +7,7 @@
 }
 
 .about-right {
-  // width: 30%
+  margin-top: 66px;
 }
 
 .about-right img {
@@ -16,4 +16,42 @@
 .admin-buttons {
   display: flex;
   justify-content: center;
+}
+
+.home-content {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.banner-img {
+  width: 100%
+}
+
+.laureates-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cover-img {
+  display: block;
+  width: auto;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.laureates-desc {
+  width: 280px;
 }
