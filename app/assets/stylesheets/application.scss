@@ -20,6 +20,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+//variables
 $main-font: 'Jost', sans-serif;
 $highlight-font: 'Josefin Sans', sans-serif;
 $main-color: #574643;
@@ -55,6 +56,17 @@ h1 {
   display: flex;
 }
 
+@media (max-width: 991.98px) {
+    .content {
+      flex-direction: column;
+    }
+
+    h2, .h2 {
+      font-size: 25px
+    }
+}
+
+//buttons
 .button {
   background: #CDB370;
   box-shadow: 0px 4px 12px rgba(205, 179, 112, 0.2);
@@ -86,14 +98,15 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
   color: $bg-color;
 }
 
-input {
-  padding: 5px
-}
-
+//general form styling
 form label, form input {
   display: block;
   margin: 10px 0;
   width: 35%;
+}
+
+input {
+  padding: 5px
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -112,6 +125,7 @@ a:hover {
   color: $hover-highlight-color;
 }
 
+//general table styling
 td, th {
   border: 1px solid #ddd;
   padding: 10px;
@@ -123,6 +137,30 @@ td, th {
   display: flex;
   justify-content: center;
 }
+
+//dark mode
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+//bootstrap-like general styling classes
+.bold {
+  font-weight: bold;
+}
+
+.f-normal {
+  font-weight: normal;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
 
 /** HEADER **/
 
@@ -173,16 +211,8 @@ color: $main-color;
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
-    .navbar {
-        background: $bg-color;
-    }
-
-    .navbar .navbar-brand, .navbar .nav-link {
-        color: $main-color;
-    }
-
-    .navbar-toggler {
-      display: block;
+    .navbar-nav {
+      flex-direction: column;
     }
 }
 
@@ -230,8 +260,9 @@ footer {
   color:#aaa;
   margin-bottom:0;
 }
-
-.dark-mode {
-  background-color: black;
-  color: white;
+/* Change footer styling on small viewports */
+@media (max-width: 991.98px) {
+    .footer-basic {
+      flex-direction: column;
+    }
 }

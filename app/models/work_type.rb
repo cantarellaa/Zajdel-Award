@@ -1,3 +1,4 @@
+#sadly a bit unused due to lack of time
 class WorkType < ApplicationRecord
 
   belongs_to :literary_work
