@@ -1,4 +1,7 @@
 %body
+
+
+
   %footer
     %hr/
     .footer-basic
@@ -12,5 +15,8 @@
             %a{:href => "/contact"} Contact
           %li.list-inline-item
             %a{:href => "/admin"} Admin
+          %li.list-inline-item
+            %input#darkb{onclick: "DarkMode('Dark')", type: "checkbox", name: "dark mode"}
+            %label.f-normal{:for => "dark mode"} Dark mode
 
       %div.copyright Związek Stowarzyszeń "Fandom Polski" © 2021
