@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   get 'history', to: 'home#history'
   get 'patron', to: 'home#patron'
   get 'voting', to: 'home#voting'
-
   get 'admin', to: 'home#admin'
   get 'laureates', to: 'home#laureates'
   get 'nominated_authors', to: 'home#nominated_authors'

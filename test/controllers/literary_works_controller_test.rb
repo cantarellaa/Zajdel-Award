@@ -1,9 +1,13 @@
 require 'test_helper'
 
 class LiteraryWorksControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
   setup do
     @literary_work = literary_works(:one)
     @author = authors(:one)
+    
+    @user = users(:one)
+    sign_in @user
   end
 
   test "should get index" do

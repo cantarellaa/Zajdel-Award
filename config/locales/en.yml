@@ -97,7 +97,7 @@ en:
     voting:
       title: Voting System
       voting1: Instant-runoff voting (IRV) is a type of ranked preferential vote counting method used in single-seat elections with more than two candidates. IRV is also sometimes referred to as the alternative vote (AV), preferential voting, single transferable voting (New Zealand), or, in the United States, ranked-choice voting (RCV), though these names are also used for other systems.
-      voting2: Like all ranked ballot voting systems, instead of indicating support for only one candidate, voters in IRV elections can rank the candidates in order of preference. Ballots are initially counted for each voter's top choice. If a candidate has more than half of the vote based on first-choices, that candidate wins. If not, then the candidate with the fewest votes is eliminated.
+      voting2: Like all ranked ballot voting systems, instead of indicating support for only one candidate, voters in IRV elections can rank the candidates in order of preference. Ballots are initially counted for each voters top choice. If a candidate has more than half of the vote based on first-choices, that candidate wins. If not, then the candidate with the fewest votes is eliminated.
       voting3: The voters who selected the defeated candidate as a first choice then have their votes added to the totals of their next choice. This process continues until a candidate has more than half of the votes. When the field is reduced to two, it has become an "instant runoff" that allows a comparison of the top two candidates head-to-head.
       img-description: The stand with the ballot box, Zielona Góra 2021
 
